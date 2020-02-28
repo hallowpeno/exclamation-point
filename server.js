@@ -24,42 +24,9 @@ app.use(function(req, res, next) {
 });
 
 function textAlert(mes){
-  client.Message.send({
-    from : "+19193385629", // This must be a Catapult number on your account
-    to   : "+14045104491",
-    text : mes
-  })
-  .then(function(message) {
-    console.log("Message sent with ID " + message.id);
-  })
-  .catch(function(err) {
-    console.log(err.message);
-  });
-  client.Message.send({
-    from : "+19193385629", // This must be a Catapult number on your account
-    to   : "+14049604404",
-    text : mes
-  })
-  .then(function(message) {
-    console.log("Message sent with ID " + message.id);
-  })
-  .catch(function(err) {
-    console.log(err.message);
-  });
-  client.Message.send({
-    from : "+19193385629", // This must be a Catapult number on your account
-    to   : "+17708912523",
-    text : mes
-  })
-  .then(function(message) {
-    console.log("Message sent with ID " + message.id);
-  })
-  .catch(function(err) {
-    console.log(err.message);
-  });
   // client.Message.send({
   //   from : "+19193385629", // This must be a Catapult number on your account
-  //   to   : "+16789517861",
+  //   to   : "+14045104491",
   //   text : mes
   // })
   // .then(function(message) {
@@ -68,6 +35,39 @@ function textAlert(mes){
   // .catch(function(err) {
   //   console.log(err.message);
   // });
+  // client.Message.send({
+  //   from : "+19193385629", // This must be a Catapult number on your account
+  //   to   : "+14049604404",
+  //   text : mes
+  // })
+  // .then(function(message) {
+  //   console.log("Message sent with ID " + message.id);
+  // })
+  // .catch(function(err) {
+  //   console.log(err.message);
+  // });
+  // client.Message.send({
+  //   from : "+19193385629", // This must be a Catapult number on your account
+  //   to   : "+17708912523",
+  //   text : mes
+  // })
+  // .then(function(message) {
+  //   console.log("Message sent with ID " + message.id);
+  // })
+  // .catch(function(err) {
+  //   console.log(err.message);
+  // });
+  client.Message.send({
+    from : "+19193385629", // This must be a Catapult number on your account
+    to   : "+16789517861",
+    text : mes
+  })
+  .then(function(message) {
+    console.log("Message sent with ID " + message.id);
+  })
+  .catch(function(err) {
+    console.log(err.message);
+  });
 }
 
 
@@ -113,10 +113,10 @@ app.post('/', function(req, res) {
   
 });
 
-function textCathy(body){
+function textJulie(body){
   client.Message.send({
     from : "+19193385629", // This must be a Catapult number on your account
-    to   : "+14049604404",
+    to   : "+16789517861",
     text : "Thanks for your help! Your Period Pal is waiting for you at " + body.location + ". https://maps.google.com/?q=" + body.latitude + "," + body.longitude
   })
   .then(function(message) {
